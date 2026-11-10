@@ -1,0 +1,34 @@
+
+:root{--paper:#fbf4e6;--ink:#3a2a22;--soft:#7a6656;--rust:#c2562b;--lantern:#f2a93b;--teal:#2f6f6a;--sea:#1f4d55;--card:#fffaf0}
+*{box-sizing:border-box}html{background:var(--paper)}
+body{margin:0;color:var(--ink);font:18px/1.6 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+ background:radial-gradient(1200px 500px at 50% -120px,#ffe2b3 0,rgba(255,226,179,0) 70%),var(--paper)}
+a{color:var(--teal)}a:hover{color:var(--rust)}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+header.top{background:linear-gradient(180deg,#24525a 0,#2f6f6a 55%,#e7a35a 100%);color:#fff8ea;padding:34px 0 64px;position:relative;overflow:hidden}
+header.top:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-40px;height:80px;background:var(--paper);border-radius:50% 50% 0 0}
+header.top .wrap{display:flex;gap:22px;align-items:center;position:relative;z-index:1}
+header.top img.me{width:96px;height:96px;border-radius:50%;border:4px solid #fff3d6;background:#fff3d6;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+header.top h1{margin:0;font-size:40px;letter-spacing:.5px}header.top p{margin:2px 0 0;opacity:.92;font-style:italic}
+nav.links{margin-top:10px}nav.links a{color:#fff3d6;margin-right:18px;text-decoration:none;border-bottom:1px dashed rgba(255,243,214,.6)}
+nav.links a:hover{color:#fff}
+h2{font-size:28px;margin:34px 0 10px;color:var(--sea)}h2 small{font-size:15px;color:var(--soft);font-weight:normal}
+.lead{font-size:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+.card{background:var(--card);border-radius:14px;box-shadow:0 2px 0 #ead9bd,0 8px 22px rgba(58,42,34,.08);padding:14px;position:relative}
+.card img{width:100%;border-radius:8px;display:block;background:#efe2c8;aspect-ratio:4/3;object-fit:cover}
+.card h3{margin:10px 0 2px;font-size:19px}.card p{margin:4px 0;font-size:15.5px;color:var(--soft)}
+.price{font-weight:bold;color:var(--rust);font-size:18px}
+.btn{display:inline-block;background:var(--rust);color:#fff;text-decoration:none;padding:7px 16px;border-radius:999px;font-size:15px;margin-top:8px;border:0;font-family:inherit;cursor:pointer}
+.btn:hover{background:#a8441d;color:#fff}.btn.ghost{background:transparent;color:var(--teal);border:2px solid var(--teal)}
+.gone{position:absolute;top:22px;right:-6px;background:var(--sea);color:#fff;padding:3px 12px;transform:rotate(6deg);font-size:14px;border-radius:4px}
+.letter{background:var(--card);border-radius:14px;padding:26px 30px;box-shadow:0 8px 22px rgba(58,42,34,.08)}
+.letter .date{color:var(--soft);font-style:italic}.letter p{margin:0 0 14px}
+.signup{background:linear-gradient(135deg,#fff1d2,#ffe6c0);border-radius:16px;padding:22px 24px;margin:34px 0;border:2px dashed #e8b46a}
+.signup input[type=email]{font:inherit;padding:8px 12px;border-radius:999px;border:2px solid #d9b98a;width:min(320px,100%);background:#fffdf7}
+.list{list-style:none;padding:0}.list li{padding:10px 0;border-bottom:1px dotted #d8c4a2}
+.making{list-style:none;padding:0}.making li{margin:8px 0;font-size:20px}.making li:before{content:"\2726  ";color:var(--lantern)}
+audio{width:100%;margin-top:8px}
+pre.poem{white-space:pre-wrap;font:inherit;margin:8px 0 0}
+footer{margin:50px 0 0;padding:26px 0 40px;color:var(--soft);font-size:15px;text-align:center;border-top:1px solid #ead9bd}
+.muted{color:var(--soft)}
